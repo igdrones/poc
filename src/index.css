@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: rgba(170, 169, 162, 0.418);
+  font-weight: 400;
+  color: #000000;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+* {
+  line-height: 1.5;
+  outline: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+@import url('./styles/keyframes.css');
+@import url('./styles/animations.css');

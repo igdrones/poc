@@ -1,0 +1,76 @@
+.user-card{
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: whitesmoke;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.user-card .user-card-flex{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.user-card .user-card-flex .user-card-full-col{
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.user-card .user-card-user-name{
+    background-color:#150a8c;
+}
+
+.user-card .user-card-user-name p{
+   font-size: 18px;
+   text-align: center;
+   color: #ffffff;
+   font-weight: 700;
+   margin: 16px 0px;
+}
+
+.user-card .user-card-flex .user-details i.fa{
+    margin-right: 10px;
+    color: #150a8c;
+}
+
+.user-card .user-card-flex .user-details i.fa-phone{
+    transform: rotate(90deg);
+}
+
+.user-card ul.details-list{
+    padding: 5px 15px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.user-card ul.details-list li{
+    padding-left: 0;
+    list-style: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.user-card .view-more{
+    padding: 0px 15px;
+}
+.user-card .view-more p{
+    text-align: right;
+    font-size: 14px;
+    color: #f8910a;
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+    float: right;
+}
+.user-card .view-more p:hover{
+    color: #150a8c;
+}
+.user-card .view-more p i.fa-arrow-right{
+    margin-left: 5px;
+}
