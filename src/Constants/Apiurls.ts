@@ -4,4 +4,4 @@ import { JSON_PLACEHOLDER_BASE, POC_BASE } from "./Base";
 export const GET_USERS=JSON_PLACEHOLDER_BASE+"/users";
 
 /* Environment POC  End Points */
-export const POC_USERS=POC_BASE+"/users";
+export const POC_USERS=POC_BASE+"/user";

@@ -10,8 +10,8 @@ export const HttpRestService = (
   let config: any = {
     headers: headers,
   };
-
-  switch (method.toLowerCase()) {
+  console.log(method);
+  switch (method.toUpperCase()) {
     case "POST":
       config.method = "POST";
       if (typeof body !== "undefined") {
@@ -40,7 +40,7 @@ export const HttpRestService = (
       config.method = "GET";
       break;
   }
-
+  console.log(config);
   return fetch(attachDynamicParam(url), config).then((res: any) => {
       return res;
     }).catch((e: any) => {

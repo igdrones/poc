@@ -44,8 +44,9 @@ export default class UserPage extends Component {
         const req={
             firstName:this.state.userRequest.firstname,
             lastName:this.state.userRequest.lastname,
-            phoneNumber:(this.state.userRequest.phone.trim()!=="")?0:parseInt(this.state.userRequest.phone.trim())
+            phoneNumber:(this.state.userRequest.phone.trim()!=="")?parseInt(this.state.userRequest.phone.trim()) : 0
         }
+        console.log(req)
         doPostPocUser(req).then((res:any)=>{
             this.getPocUsers();
         },(err:any)=>{
